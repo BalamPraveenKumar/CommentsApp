@@ -1,0 +1,191 @@
+.container {
+  padding: 24px;
+  max-width: 1080px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.upperSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.text-section {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #e0f2fe;
+  padding: 4px;
+}
+
+.headingEl {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.description {
+  font-size: 15px;
+  color: #475569;
+  margin-bottom: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inputEl,
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #f8fafc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.button {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  max-width: 200px;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+.imagecontainer {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+
+}
+
+
+.bottomSection {
+  margin-top: 20px;
+}
+
+.commentsLength {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.comments-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+@media (max-width: 768px) {
+  .upperSection {
+    flex-direction: column;
+  }
+
+  .text-section,
+  .imagecontainer {
+    width: 100%;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .image {
+    max-width: 400px;
+  }
+
+  .headingEl {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .button {
+    font-size: 15px;
+  }
+}
+
+.commentsLength {
+  display: inline-block;
+  background-color: #e0f2fe;         
+  color: #0c4a6e;                   
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #38bdf8;        
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .commentsLength {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .commentsLength {
+    font-size: 22px;
+    padding: 12px 24px;
+  }
+}
